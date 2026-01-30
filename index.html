@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Nexus - Protocolo de Adivinación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="cyber-panel" id="mainContainer">
+        <div class="header">
+            <div class="title-group">
+                <h2>NEON NEXUS</h2>
+                <p>STATUS: <span id="gameStatus">AWAITING_INPUT</span></p>
+            </div>
+            <div class="timer-display">
+                <span id="timer">30</span><small>s</small>
+            </div>
+        </div>
+
+        <section class="feedback-area">
+            <h1 id="temperatureText">SISTEMA INICIADO</h1>
+        </section>
+
+        <div class="interaction-zone">
+            <input type="number" id="userInput" placeholder="[1-100]" min="1" max="100">
+            <button id="btnCheck">PROBAR</button>
+        </div>
+
+        <div class="history-panel">
+            <p>INTENTOS FALLIDOS:</p>
+            <div id="historyDisplay">--</div>
+        </div>
+    </main>
+    <script src="juego.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+ :root {
+    --neon-blue: #00f3ff;
+    --neon-red: #ff003c;
+    --neon-yellow: #ff9d00;
+    --neon-green: #05ffa1;
+    --bg-panel: rgba(10, 10, 15, 0.85);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    /* REEMPLAZA 'fondo.jpg' con tu imagen */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cyber-panel {
+    background: var(--bg-panel);
+    width: 400px;
+    padding: 30px;
+    border: 3px solid var(--neon-blue);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--neon-blue);
+    transition: all 0.4s ease; /* Para que el cambio de color sea fluido */
+}
+
+/* Clases de Temperatura Visual */
+.cold { border-color: var(--neon-blue); box-shadow: 0 0 30px var(--neon-blue); }
+.warm { border-color: var(--neon-yellow); box-shadow: 0 0 30px var(--neon-yellow); }
+.hot { border-color: var(--neon-red); box-shadow: 0 0 30px var(--neon-red); }
+.victory { border-color: var(--neon-green); box-shadow: 0 0 30px var(--neon-green); }
+
+.timer-display {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: var(--neon-red);
+    text-shadow: 0 0 10px var(--neon-red);
+}
+
+input {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+button {
+    background: var(--neon-blue);
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
